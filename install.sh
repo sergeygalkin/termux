@@ -4,6 +4,6 @@ apt upgrade -y
 apt install vim openssh zsh git vim
 curl -O https://github.com/sergeygalkin.keys
 cat sergeygalkin.keys >> .ssh/authorized_keys
-if [ ! -d .oh-my-zsh ]; do  sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"; done
+if [ ! -d .oh-my-zsh ]; then  sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"; fi
 termux-setup-storage
 
